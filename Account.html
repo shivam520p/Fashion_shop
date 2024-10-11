@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login your account</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="account.css">
+</head>
+<body>
+  <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+            <h1 style="padding-left: 30px;">Fashion Shop.</h1>
+        </div>
+        <form class="search" action="">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+          <ul class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#information">Contact</a></li>
+              <li><a href="#login">Account</a></li>
+              <li><a href="AddCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li><a href="#notification"><i class="fa-regular fa-bell"></i></a></li>
+          </ul>
+      </div>
+  </nav>
+  <section id="home">
+      <div class="home_page">
+        <div class="row">
+            <div class="home_img ">
+                <img src="bg_image/bg_1.jpg" alt="img ">
+            </div>
+            <div class="col-2">
+              <div class="form-container">
+                  <div class="form-btn">
+                      <span onclick="login()">Login</span>
+                      <span onclick="register()" id="register">Register</span>
+                      <hr id="indicate">
+                  </div>
+                  <form id="LoginForm">
+                      <input type="text" placeholder="Username">
+                      <input type="text" placeholder="Password">
+                      <a href=""><i class="fa-solid fa-lock"></i>Forget password</a>
+                      <button type="submit" class="btn">Login</button>
+                  </form>
+                  <form id="RegForm">
+                      <input type="text" class="user" placeholder="Username">
+                      <input type="email" placeholder="Email">
+                      <input type="text" placeholder="Password">
+                      <button type="submit" class="btn">Register</button>
+                  </form>
+              </div>
+            </div>
+        </div>
+      </div>
+  </section>
+  <footer>
+    <div class="footer-container container">
+        <div class="content_1">
+          <h1 style="color: aliceblue;">Download Our App</h1>
+            <p>Download App for Android and ios mobile phone. </p>
+            <img src="bg_image/app_store.png" >
+        </div>
+        <div class="content_2">
+            <h4>SHOPPING</h4>
+            <a href="#sellers">Clothing Store</a>
+            <a href="#sellers">Trending Shoes</a>
+            <a href="#sellers">Accessories</a>
+            <a href="#sellers">Sale</a>
+        </div>
+        <div class="content_3">
+            <h4>SHOPPING</h4>
+            <a href="./contact.html">Contact Us</a>
+            <a href="/">Payment Method</a>
+            <a href="/">Delivery</a>
+            <a href="/">Return and Exchange</a>
+        </div>
+        <div class="content_4">
+            <h4>NEWLETTER</h4>
+            <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
+            <div class="f-mail">
+                <input type="email" placeholder="Your Email">
+                <i class='bx bx-envelope'></i>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="f-design">
+        <div class="f-design-txt container">
+            <p>Copyright &copy; 2024 Design By Shivam Pandey</p>
+        </div>
+    </div>
+</footer>
+
+
+  <!-- <script src="script.js"></script> -->
+ <script>
+    var LoginForm = document.getElementById("LoginForm")
+    var RegForm = document.getElementById("RegForm")
+    var indicate = document.getElementById("indicate")
+
+    function register(){
+        RegForm.style.transform ="translate(0px)";
+        LoginForm.style.transform ="translate(0px)";
+        indicate.style.transform ="translate(160px)";
+    }
+
+    function login(){
+        RegForm.style.transform ="translate(300px)";
+        LoginForm.style.transform ="translate(300px)";
+        indicate.style.transform ="translate(25px)";
+    }
+ </script>
+</body>
+
+</html>
